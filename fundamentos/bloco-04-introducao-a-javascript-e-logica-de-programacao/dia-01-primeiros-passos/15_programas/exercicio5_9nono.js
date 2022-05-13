@@ -1,19 +1,33 @@
-const a;
-const b;
-const c;
+let a;
+let b;
+let c;
 
-if(a+b+c=180){
+
+//function{
+//
+//if(a+b+c==180){
+//    console.log(true);
+//  }else{
+//    console.log(false);
+//}
+//
+//if(a>0 && b>0 && c>0){
+//    console.log("true")
+//}else{
+//    console.log(false);
+//}
+//}
+//
+//console.log;
+
+if(a+b+c == 180 && a>0 && b>0 && c>0){
     console.log(true);
 }else{
     console.log(false);
 }
 
-let validAngles;
+console.log;
 
 
-if(a>0 && b>0 && c>0){
-    console.log("valid angles")
-} else 
 
 
-//Pode incluir todas as condições no primeiro "if"?
