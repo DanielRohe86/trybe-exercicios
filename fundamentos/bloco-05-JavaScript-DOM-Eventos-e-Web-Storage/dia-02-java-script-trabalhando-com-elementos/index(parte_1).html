@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+        
+        <script>
+          
+        ///*1*/console.log(document.getElementById("elementoOndeVoceEsta");
+        // /*2*/console.log(document.getElementById("elementoOndeVoceEsta").parentNode);
+        /*2*/let text = document.getElementById("elementoOndeVoceEsta").parentNode;
+        text.style.color = 'red'
+        /*3*/let textTwo = document.getElementById("primeiroFilhoDoFilho")
+        textTwo.innerText = 'add text'
+        /*5*/ document.getElementById('elementoOndeVoceEsta').parent.node;
+        ///*6??*/ let exerciseSix = document.getElementById('elementoOndeVoceEsta').nextSibling;
+        //console.log(exerciseSix)
+        /*7*/ 
+
+        /*adiciona
+
+        INPUT
+        let ingredientItems = [
+          'a',
+          'b',
+          'c'
+        ]
+
+        SELECIONA CLASSE NO HTML DECLARANDO UMA VARIÁVEL
+        let ingredientList = document.querySelector('.ingredient-list' //classe no HTML);
+        
+        PEGA O INPUT E FAZ O FOR PARA PERCORRER, JOGA OS VALORES NUMA NOVA VARIÁVEL
+        for (let index = 0; index < ingredientItems; index += 1);
+          let ingredient = ingredientItems[index];
+        
+        DECLARA UMA NOVA VARIÁVEL PARA IMPRIMIR O CONTEÚDO DE VOLTA NO HTML
+          let ingredientListItems = document.createElement('parameter');
+        
+        ATRIBUI À NOVA VARIÁVEL O INNERTEXT COM O CONTEÚDO QUE FOI EXTRAÍDO DA LEITURA DO INPUT
+
+          ingredientListItems.innerText = ingredient
+        
+        IMPRIME NA VARIÁVEL QUE POSSUI A CLASSE DO HTML A VARIÁVEL COM O CONTEÚDO DA LISTA (VIA APPENDCHILD)
+
+          ingredientList.appendChild(ingredientListItems)
+
+        </script>
+      </main>
+</body>
+</html>
