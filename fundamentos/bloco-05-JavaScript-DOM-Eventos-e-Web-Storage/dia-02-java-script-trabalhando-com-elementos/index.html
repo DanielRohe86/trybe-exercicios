@@ -59,15 +59,19 @@
     <script>
     
     //1
-    document.getElementsByTagName('body')[0].style.background = 'rgb(76,164,109)'
-    let corpus = document.getElementsByTagName('body');
+    document.querySelector('body')/*[0]*/.style.background = 'rgb(76,164,109)'
+    let corpus = document.querySelector('body')/*[0]*/;
 
     let contentH1 = document.createElement('h1');
-    contentH1.innerText = 'Exercício 5.2 - JavaScript DOM'
-    document.contentH1.style = 'blue';
+    contentH1.textContent = 'Exercício 5.2 - JavaScript DOM';
+    //document.contentH1.style = 'blue';
     corpus.appendChild(contentH1);
 
-
+//    const corpus = document.body;
+//    const contentH1 = document.createElement('h1');
+//    contentH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+//    document.contentH1.style = 'blue';
+//    corpus.appendChild(contentH1);
 
     </script>
   </body>
