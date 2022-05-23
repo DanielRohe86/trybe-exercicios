@@ -1,0 +1,24 @@
+h1 {
+    background-color: #FFC5E5;
+    position: absolute;
+    font-size:20px;
+}
+
+h3 {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+h1 h3 {
+font-style: Arial;
+color: #1f1c0d;
+}
+
+body {
+background-color: #FEE9FC;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: left;
+}
