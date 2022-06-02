@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+        color: blue;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+
+      .description {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    
+    //1
+    //document.querySelector('body')/*[0]*/.style.background = 'rgb(76,164,109)'
+    let corpus = document.querySelector('body')/*[0]*/;
+
+    let contentH1 = document.createElement('h1');
+    contentH1.textContent = 'Exercício 5.2 - JavaScript DOM';
+    contentH1.className = 'title';
+    //document.contentH1.style = 'blue';
+    corpus.appendChild(contentH1);
+
+//    const corpus = document.body;
+//    const contentH1 = document.createElement('h1');
+//    contentH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+//    document.contentH1.style = 'blue';
+//    corpus.appendChild(contentH1);
+
+      //2
+
+      let contentMain = document.createElement('main');
+      corpus.appendChild(contentMain);
+
+      //3
+
+      let contentSection = document.createElement('section');
+      contentSection.className = "main-content";
+      contentMain.appendChild(contentSection);
+
+      //4
+
+      let tagP = document.createElement('p');
+      tagP.innerText = 'Algum texto para a tag p';
+      contentSection.appendChild(tagP);
+
+      //5
+
+      let sectionLeft = document.createElement('section');
+      sectionLeft.className = 'left-content';
+      contentMain.appendChild(sectionLeft);
+
+      //6
+
+      let sectionRight = document.createElement('section');
+      sectionRight.className = 'right-content';
+      contentMain.appendChild(sectionRight);
+
+      //7
+
+      let img = document.createElement('img');
+      img.src = 'https://picsum.photos/200'
+      sectionLeft.appendChild(img);
+
+      //8
+      array = ["um",	"dois",	"três",	"quatro",	"cinco",	"seis",	"sete",	"oito",	"nove",	"dez"];
+
+      for (index = 0; index < array.length; index += 1){
+        let valor = array[index];
+        let list = document.createElement('li');
+        list.innerText = array[index];
+        sectionRight.appendChild(list);
+      }
+
+      //9 - deve ter como fazer função
+      //??????????????????????????????????????????????????????????
+
+      let tagH3_1 = document.createElement('h3');
+      hagH3_1.innerText = 'teste para o h3';
+      hagH3_1.className = 'description';
+      corpus.appendChild(tagH3_1);
+
+      let tagH3_2 = document.createElement('h3');
+      hagH3_2.className = 'description';
+      corpus.appendChild(tagH3_2);
+
+      let tagH3_3 = document.createElement('h3');
+      hagH3_3.className = 'description';
+      corpus.appendChild(tagH3_3);
+
+      //parte 2
+      //1 ok, inseri cor azul
+      
+      //2 ok
+
+
+
+      
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
