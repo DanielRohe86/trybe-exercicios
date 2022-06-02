@@ -1,0 +1,52 @@
+*{
+
+}    
+    header {
+    background-color: gray;
+    font-size: 10px;
+    color: white;
+    padding: 2px;
+    width: 100%;
+}
+
+.line-content {
+    margin: 20px;
+    border: 0 none;
+  }  
+
+#box {
+    border: solid black 1px;
+    padding: 2px;
+    height: 100%;    
+}
+
+.identification {
+    font-size: 5px;
+    padding: 1px;
+}
+
+#name {
+    
+}
+
+#email{
+    margin-top: 2px;
+}
+
+.options {
+    margin-top: 2px;
+}
+
+
+
+textarea {
+    width: 100%;
+    resize: none;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 50px;
+}
+
+.agreement {
+    display::?
+}
