@@ -1,0 +1,41 @@
+* {
+    margin: 1px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #47484fff;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+
+}
+
+h1 {
+    font-size: 8px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+a {
+    color: aliceblue;
+    font-size: 7px;
+
+}
+
+.tools img p {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+}
+
+p {
+   font-size: 6px;
+   font
+}
