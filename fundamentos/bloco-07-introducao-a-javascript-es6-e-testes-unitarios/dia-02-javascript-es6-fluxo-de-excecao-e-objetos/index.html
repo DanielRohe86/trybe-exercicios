@@ -4,14 +4,21 @@
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Calculadora</title>
+  <title>Calculadora</title> 
+  <style>
+    
+  #value1, #value2 {
+    -webkit-appearance: none
+  }
+
+  </style>
 </head>
 <body>
   <p>Informe dois números para realizar a soma:</p>
   <label for='value1'>Valor 1:</label>
-  <input type='text' id='value1'>
+  <input type='number' id='value1'>
   <label for='value2'>Valor 2:</label>
-  <input type='text' id='value2'>
+  <input type='number' id='value2'>
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
@@ -23,7 +30,7 @@
       document.getElementById('result').innerHTML = `Resultado: ${result}`;
       try {
         if (value1 === "" || value2 === "") throw new Error ('digite um número em ambas as caixas');
-        if (isNaN(value1) || isNaN(value2)) throw new Error ('O valor digitado não é um número');
+        /* if (isNaN(value1) || isNaN(value2)) throw new Error ('O valor digitado não é um número'); */
       } catch (error) {
         document.getElementById('result').innerHTML = `Erro: ${error.message}`;
       } finally {
