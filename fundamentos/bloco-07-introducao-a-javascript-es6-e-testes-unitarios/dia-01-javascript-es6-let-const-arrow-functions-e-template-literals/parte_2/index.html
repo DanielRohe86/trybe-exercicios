@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <span id="text"></span>
+  </div>
+  <button id="button">click aqui!</button>
+</body>
+
+<script>
+
+let counterValue = 0;
+
+const counterDisplay = document.getElementById('text');
+
+const myButton = document.getElementById('button');
+
+myButton.addEventListener('click', () => counterDisplay.innerHTML = counterValue += 1)
+  
+</script>
+</html>
