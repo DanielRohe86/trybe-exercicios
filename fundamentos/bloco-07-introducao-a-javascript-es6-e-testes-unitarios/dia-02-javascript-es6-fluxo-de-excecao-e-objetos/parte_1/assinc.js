@@ -1,4 +1,4 @@
-/* const student1 = {
+const student1 = {
   Html: 'Muito Bom',
   Css: 'Bom',
   JavaScript: 'Ótimo',
@@ -13,7 +13,7 @@ const student2 = {
   Git: 'Bom', // chave adicionada
 };
 
-//NÃO ENTENDI
+
 const listSkills = (student) => {
   const arrayOfSkills = Object.keys(student);
   for (const index in arrayOfSkills) {
@@ -25,9 +25,9 @@ console.log('Estudante 1');
 listSkills(student1);
 
 console.log('Estudante 2');
-listSkills(student2); */
+listSkills(student2);
 
-const student = {
+/* const student = {
   Html: 'Muito Bom',
   Css: 'Bom',
   JavaScript: 'Ótimo',
@@ -52,3 +52,5 @@ console.log(listSkillsValuesWithFor(student));
 
 // Com Object.values
 console.log(listSkillsValuesWithValues(student));
+
+ */
