@@ -137,6 +137,23 @@ const biggestWord = phrase => {
 console.log(biggestWord("Encontre a maior palavra desta frase"));
   */
 
+//refatora o gabarito
+
+/* const longestWord = (text) => {
+  const wordArray = text.split(' ');
+  let result = '';
+
+  for (const word of wordArray) {
+      if (word.length > 0) {
+        result = word;
+      }
+  }
+
+  return result;
+}
+
+console.log(longestWord('Antonio foi ao banheiro e não sabemos o que aconteceu')); */
+
 //EXERCICIO 3
 
 //ESTÁ NO HTML
